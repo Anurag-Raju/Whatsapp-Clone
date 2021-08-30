@@ -1,20 +1,19 @@
-import firebase from 'firebase';
+import firebase from "firebase";
 const firebaseConfig = {
-    apiKey: "AIzaSyDR7JBKwAm_i8bjrf_One2xi1S5_hIc9Q8",
-    authDomain: "whatsapp-clone-efb49.firebaseapp.com",
-    databaseURL: "https://whatsapp-clone-efb49.firebaseio.com",
-    projectId: "whatsapp-clone-efb49",
-    storageBucket: "whatsapp-clone-efb49.appspot.com",
-    messagingSenderId: "465630611116",
-    appId: "1:465630611116:web:8700cd3bd62295743a0109",
-    measurementId: "G-5ZQ2ETHDEH"
-  };
+  apiKey: "AIzaSyBvl8ycci4VHXRcqYiwenGP4Aj39ZPnneg",
+  authDomain: "whatsapp-clone-2b32d.firebaseapp.com",
+  projectId: "whatsapp-clone-2b32d",
+  storageBucket: "whatsapp-clone-2b32d.appspot.com",
+  messagingSenderId: "941493311094",
+  appId: "1:941493311094:web:4ae3da1ad3563c050df157",
+  measurementId: "G-VJH3C6D9FC",
+};
 
-  const firebaseApp = firebase.initializeApp(firebaseConfig);
-  const db = firebaseApp.firestore();
-  const auth = firebase.auth();
-  const storage = firebase.storage();
-  const provider = new firebase.auth.GoogleAuthProvider();
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
+const auth = firebase.auth();
+const storage = firebase.storage();
+const provider = new firebase.auth.GoogleAuthProvider();
 
-  export {auth, provider,storage}
-  export default db
+export { auth, provider, storage };
+export default db;
